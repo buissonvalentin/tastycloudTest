@@ -1,0 +1,96 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>TastyCloud</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./createItemStyle.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="./createItem.js"></script>
+</head>
+
+<body style="height : 100%; margin: 0px; padding: 0px; font-size:large">
+
+
+
+        <a href="./">Page accueil</a>
+
+
+    <div class="form">
+        <div class="title">
+            Ajouter un Produit
+        </div>
+        <div class="line">
+
+        </div>
+        <div id="nameContainer">
+            <div class="form-row" >
+                <div class="form-group col-md-6">
+                    <label for="name">Nom</label>
+                    <input type="text" class="form-control" id="name" placeholder="Nom du produit">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="nameLg">Langue</label>
+                    <select  id="nameLg" class="form-control">
+                        <option selected>FR</option>
+                        <option>EN</option>
+                        <option>DE</option>
+                        <option>ES</option>
+                        <option>NL</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <button id="addName" class="btn btn-success"><i class="fas fa-plus micon"></i></button>
+
+        <div id="descContainer">
+            <div class="form-row">
+                <div class="form-group col-md-10">
+                    <label for="desc">Description</label>
+                    <input type="text" class="form-control" id="desc" placeholder="Description du produit">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="descLg">Langue</label>
+                    <select id="descLg" class="form-control">
+                        <option selected>FR</option>
+                        <option>EN</option>
+                        <option>DE</option>
+                        <option>ES</option>
+                        <option>NL</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <button id="addDesc" class="btn btn-success"><i class="fas fa-plus micon"></i></button>
+
+        <div class="form-row">
+            <div class="form-group col-md-5">
+                <label for="price">Prix</label>
+                <input type="text" class="form-control" id="price" placeholder="Prix du produit">
+            </div>
+        </div>
+        <button id="add" type="submit" class="btn btn-success">Ajouter</button>
+    </div>
+
+
+
+</body>
+
+</html>
